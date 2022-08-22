@@ -1,0 +1,349 @@
+:root {
+  font-size: 62.5%;
+  --primary-color:  #ba292b;
+  --hover-color: #ab1f21;
+  --secondary-color: #ff8615;
+  --primary-color-two: #86b93f;
+  --hover-color-three: #3a6f1a;
+  --primary-color-three: #51b5b8;
+  --hover-color-four: #3a8a8c;
+  --hover-two-color: #d16b0c;
+  --body-bg: #fafafa;
+  --bColor: #666666;
+  --white: #ffffff;
+  --black: #000000;
+  --border-color: #e2e2e2;
+  --border-color-two: #cccccc;
+  --border-color-three: #dddddd;
+  --color-one: #242424;
+  --color-two: #555555;
+  --color-three: #131313;
+  --color-four: #eeeeee;
+  --color-five: #5cb3ad;
+  --color-six: #fafafa;
+  --color-seven: #bbbbbb;
+  --color-eight: #fafafa;
+  --color-nine: #c93032;
+  --color-ten: #222222;
+  --menu-color: #333333;
+  --shape-bg: #5ac8cb;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: $bodyFont;
+  font-size: $bfSize;
+  font-weight: $fontWeight;
+  line-height: $blineHeight;
+  color: var(--bColor);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $bodyFont;
+  font-weight: 700;
+}
+
+iframe {
+  border: none;
+}
+
+a,
+b,
+div,
+ul,
+li {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -moz-outline-: none;
+}
+
+input,
+input:hover,
+input:focus,
+input:active,
+textarea,
+textarea:hover,
+textarea:focus,
+textarea:active,
+select:focus,
+select:hover {
+  -moz-outline: none;
+  outline: none;
+  box-shadow: none;
+}
+
+img:not([draggable]),
+embed,
+object,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  outline: 0;
+}
+
+a:active,
+a:focus,
+a:hover,
+a:visited {
+  text-decoration: none;
+  outline: 0;
+}
+
+:focus {
+  outline: none;
+}
+figure {
+  margin: 0;
+}
+img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+}
+
+button:focus {
+  -moz-outline: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.section {
+  padding: 10rem 0;
+}
+.section-top {
+  padding: 10rem 0 0;
+}
+.section-bottom {
+  padding: 0 0 10rem 0;
+}
+.btn.focus,
+.btn:focus {
+  border: 1px solid transparent;
+}
+
+.form-control:focus,
+.btn.focus,
+.btn:focus {
+  color: #495057;
+  background-color: #fff;
+  outline: 0;
+  box-shadow: none;
+}
+
+.acurate {
+  margin: 0;
+  padding: 0;
+}
+
+.floatleft {
+  float: left;
+}
+
+.floatright {
+  float: right;
+}
+
+.alignleft {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 2.5rem;
+}
+
+.alignright {
+  float: right;
+  margin-left: 15px;
+  margin-bottom: 2.5rem;
+}
+
+.aligncenter {
+  display: block;
+  margin: 0 auto 2.5rem;
+}
+
+a:focus {
+  outline: 0px solid;
+}
+
+.fix {
+  overflow: hidden;
+}
+
+p {
+  margin: 0 0 2.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  outline: 0 none;
+  color: var(--hover-color);
+}
+
+ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+::-moz-selection {
+  background: var(--primary-color);
+  text-shadow: none;
+}
+
+::selection {
+  background: var(--primary-color);
+  text-shadow: none;
+  color: #ffffff;
+}
+
+.browserupgrade {
+  margin: 2.5rem 0;
+  background: var(--primary-color);
+  color: #ffffff;
+  padding: 2.5rem 0;
+}
+
+/*-------------------------
+scrollUp
+--------------------------*/
+#scrollUp {
+  background: #000000;
+  bottom: 20px;
+  color: #ffffff;
+  font-size: 20px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  position: fixed;
+  right: 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s linear;
+  z-index: 1000;
+  border-radius: 5px;
+  &:hover {
+    background: var(--hover-color);
+  }
+}
+
+.body-class {
+  background: var(--body-bg);
+}
+
+.section-wrap {
+  padding: 3rem 2rem;
+  background: var(--white);
+}
+.arrow-two {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  border: 1px solid var(--border-color-two);
+  color: var(--bColor);
+  transition: $transition;
+  cursor: pointer;
+  &:hover {
+    background: var(--primary-color);
+    color: var(--white);
+  }
+}
+.p-0 {
+  padding: 0 !important;
+}
+
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+
+.pb-50 {
+  padding-bottom: 5rem;
+}
+.m-0 {
+  margin: 0 !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.m-b-30 {
+  margin-bottom: -3rem;
+}
+.m-b-15 {
+  margin-bottom: -1.5rem;
+}
+.m-b-50 {
+  margin-bottom: -5rem;
+}
+.mt-50 {
+  margin-top: 5rem;
+}
+.mb-50 {
+  margin-bottom: 5rem;
+}
+.mt-40 {
+  margin-top: 4rem;
+}
+.mb-25 {
+  margin-bottom: 2.5rem;
+}
+.mt-45 {
+  margin-top: 4.5rem;
+}
+.pb-60 {
+  padding-bottom: 6rem;
+}
+.space-20 {
+  height: 2rem;
+}
+.m-y-20 {
+  margin: -2rem 0;
+}
+.mb-60 {
+  margin-bottom: 6rem;
+}
+.mt-30 {
+  margin-top: 3rem;
+}
+.pb-15 {
+  padding-bottom: 1.5rem;
+}
+.m-b-45 {
+  margin-bottom: -4.5rem;
+}
+

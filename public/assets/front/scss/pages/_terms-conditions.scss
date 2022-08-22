@@ -1,0 +1,49 @@
+/*-------------------------
+25.terms-conditions-page
+--------------------------*/
+.terms-conditions-page {
+  .terms-top {
+    margin-bottom: 3rem;
+    h3 {
+      font-family: $titlefont;
+      font-size: 2rem;
+      font-weight: 600;
+      text-transform: capitalize;
+      color: var(--black);
+    }
+    p {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2.6rem;
+      color: var(--bColo);
+      margin-bottom: 0;
+    }
+  }
+  .terms-list {
+    .single-terms {
+      margin-bottom: 3rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      h4 {
+        margin-bottom: 1rem;
+        font-family: $titlefont;
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: var(--black);
+      }
+      p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.6rem;
+        color: var(--bColo);
+        margin-bottom: 0;
+      }
+      ul {
+        list-style: circle;
+        padding: 2rem 0 0 1.8rem;
+      }
+    }
+  }
+}

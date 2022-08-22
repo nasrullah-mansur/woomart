@@ -1,0 +1,232 @@
+/*----------------------------
+34.testimonial-area
+-----------------------------*/
+.testimonial-area {
+  .testimonial-left-area {
+    position: relative;
+    margin: 3rem 0;
+    .slick-dots {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      left: 143%;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0;
+      &:after {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 98%;
+        background: var(--border-color-two);
+        left: 50%;
+        transform: translateX(-50%);
+        top: 2px;
+        z-index: -1;
+      }
+      li {
+        position: relative;
+        margin-bottom: 2rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        border: 1px solid var(--border-color-two);
+        background: var(--white);
+        border-radius: 50%;
+        transition: $transition;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        &:after {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 100%;
+          background: var(--border-color-two);
+          left: 0;
+          top: 0;
+          border-radius: 50%;
+          transform: scale(0.6);
+          transition: $transition;
+        }
+        &.slick-active {
+          border: 1px solid var(--secondary-color);
+          &:after {
+            background: var(--secondary-color);
+          }
+        }
+      }
+    }
+  }
+  .testimonal-author-images {
+    position: relative;
+    z-index: 1;
+    width: 22rem;
+    height: 22rem;
+    border-radius: 50%;
+    &:before {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      border-top: 230px solid var(--secondary-color);
+      border-left: 150px solid transparent;
+      border-right: 150px solid transparent;
+      z-index: -2;
+      left: -27%;
+      top: 17%;
+      transform: rotate(27deg);
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: var(--color-six);
+      transform: scale(1.1);
+      left: 0;
+      top: 0;
+      border-radius: 50%;
+      z-index: -1;
+    }
+    .sigle-iamge {
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+  }
+  .testimonail-list {
+    position: relative;
+    &:after {
+      position: absolute;
+      content: "Q";
+      font-size: 4rem;
+      content: "\f10d";
+      font-family: "Font Awesome 5 free";
+      font-weight: 900;
+      color: var(--border-color-two);
+      top: 1.5rem;
+      left: 2rem;
+    }
+    .single-testimonial {
+      padding-left: 9rem;
+      p {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        color: var(--bColor);
+      }
+      .author-image {
+        width: 6.5rem;
+        height: 6.5rem;
+        line-height: 6.5rem;
+        border-radius: 50%;
+        img {
+          border-radius: 50%;
+        }
+      }
+      .clint-title {
+        margin-bottom: 0;
+        font-family: $titlefont;
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: var(--black);
+        a {
+          color: var(--black);
+          &:hover {
+            color: var(--hover-color);
+          }
+        }
+      }
+      .clint-profession {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: var(--bColor);
+        text-transform: capitalize;
+      }
+    }
+  }
+  .slick-next {
+    top: -6rem;
+    right: 1rem;
+  }
+  .slick-prev {
+    top: -6rem;
+    right: 5rem;
+  }
+}
+/*----------------------------
+testimonial-two-area 
+-----------------------------*/
+.testimonial-two-area {
+  .testimonial-slide-two {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    position: relative;
+    .slick-slide {
+      padding: 1.5rem 1.5rem 0 1.5rem;
+    }
+    .arrow-two:hover {
+      background: var(--primary-color-two);
+      color: var(--white);
+    }
+    .slick-next {
+      top: -4rem;
+      right: 1rem;
+    }
+    .slick-prev {
+      top: -4rem;
+      right: 5rem;
+    }
+  }
+  .single-testimonial {
+    background: var(--color-eight);
+    padding: 3rem;
+    .testimonial-content {
+      margin-bottom: 1.5rem;
+      p {
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        color: var(--menu-color);
+        font-style: italic;
+      }
+    }
+    .clint-info {
+      .clint-img {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+      .clint-name {
+        margin-bottom: 0;
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: var(--menu-color);
+        a {
+          color: var(--menu-color);
+          transition: $transition;
+          &:hover {
+            color: var(--primary-color-two);
+          }
+        }
+      }
+      .clint-profession {
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        color: var(--color-two);
+        font-style: italic;
+      }
+    }
+  }
+}

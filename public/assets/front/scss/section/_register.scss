@@ -1,0 +1,123 @@
+/*----------------------------
+24.register-page
+-----------------------------*/
+.register-info {
+  .register-top {
+    h2 {
+      font-family: $titlefont;
+      font-size: 2.4rem;
+      font-weight: 600;
+      color: var(--black);
+    }
+    p {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--bColor);
+    }
+  }
+  .register-form {
+    .form-group {
+      margin-bottom: 2rem;
+      position: relative;
+      .form-control {
+        width: 100%;
+        height: 4.5rem;
+        border: 1px solid var(--border-color-two);
+        padding: 1rem 1.5rem;
+        font-family: $bodyFont;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: var(--bColor);
+      }
+      .icon {
+        position: absolute;
+        right: 1.5rem;
+        top: 1.5rem;
+      }
+    }
+    .form-bottom {
+      margin-bottom: 2.5rem;
+      .form-check {
+        .form-check-input {
+          margin-top: 0.6rem;
+        }
+        .form-check-label {
+          padding-left: 1rem;
+          line-height: 1;
+          margin: 0;
+          font-family: $bodyFont;
+          font-size: 1.5rem;
+          font-weight: 400;
+          text-transform: capitalize;
+          color: var(--bColor);
+          cursor: pointer;
+        }
+      }
+      .forgot-password {
+        font-family: $bodyFont;
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        color: var(--bColor);
+        transition: $transition;
+        &:hover {
+          color: var(--secondary-color);
+        }
+      }
+    }
+    .btn-style-two {
+      border: none;
+    }
+  }
+  .register-bottom {
+    .bottom-title {
+      margin: 2rem 0;
+      h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--menu-color);
+        text-transform: capitalize;
+      }
+    }
+    .login-btn {
+      display: inline-block;
+      display: inline-block;
+      background: #4285f4;
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-transform: capitalize;
+      color: var(--white);
+      padding: 1rem 3rem;
+      transition: $transition;
+      margin-bottom: 1.5rem;
+      i {
+        margin-right: 1rem;
+      }
+      &.facebook {
+        background: #4285f4;
+      }
+      &.google {
+        background: #ea4335;
+      }
+      &:hover {
+        color: var(--white);
+        background: var(--hover-color);
+      }
+    }
+    .have-account {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      font-weight: 400;
+      text-transform: capitalize;
+      a {
+        color: var(--secondary-color);
+        font-weight: 500;
+        transition: $transition;
+        &:hover {
+          color: var(--hover-two-color);
+        }
+      }
+    }
+  }
+}
+

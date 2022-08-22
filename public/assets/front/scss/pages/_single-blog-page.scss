@@ -1,0 +1,203 @@
+/*----------------------------
+30.single-blog-page
+-----------------------------*/
+.single-blog-page {
+  .sigle-post {
+    .post-title {
+      margin-bottom: 2.5rem;
+      font-family: $titlefont;
+      font-size: 3rem;
+      font-weight: 600;
+      color: var(--black);
+    }
+    .post-thumbnail {
+      margin-bottom: 3rem;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .post-date {
+        display: inline-block;
+        position: absolute;
+        left: 1rem;
+        bottom: 1rem;
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--primary-color);
+        padding: 1.5rem 4rem;
+        background: var(--white);
+      }
+    }
+    .post-content {
+      margin: 0;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      font-weight: 400;
+      color: var(--bColor);
+    }
+    .blockquote {
+      background: var(--color-eight);
+      margin: 1.5rem 0;
+      padding: 2rem;
+      font-size: 1.5rem;
+      font-weight: 500;
+      font-style: italic;
+      color: var(--menu-color);
+      border-radius: 1rem;
+      border-left: 2px solid var(--secondary-color);
+    }
+    .blog-meta {
+      padding: 2rem 0;
+      margin: 2rem 0;
+      border-top: 1px solid var(--border-color-two);
+      .meta-box {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          display: inline-block;
+          margin-right: 2rem;
+          &:last-child {
+            margin-right: 0;
+          }
+          a {
+            display: inline-block;
+            font-size: 1.4rem;
+            font-weight: 400;
+            text-transform: capitalize;
+            color: var(--bColor);
+            transition: $transition;
+            &:hover {
+              color: var(--primary-color);
+            }
+            i {
+              margin-right: 0.5rem;
+            }
+          }
+        }
+      }
+      .social-share-area {
+        .share-title {
+          display: inline-block;
+          font-size: 1.4rem;
+          font-weight: 400;
+          text-transform: capitalize;
+          color: var(--bColor);
+        }
+        ul {
+          display: inline-block;
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          li {
+            display: inline-block;
+            margin-left: 1rem;
+            a {
+              display: inline-block;
+              font-size: 1.6rem;
+              transition: $transition;
+              color: var(--bColor);
+              &:hover {
+                color: var(--primary-color);
+              }
+            }
+          }
+        }
+      }
+    }
+    .single-post-commnt {
+      .comment-list {
+        .sngle-comment {
+          margin-bottom: 3rem;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          &:nth-child(2) {
+            margin-left: 4.5rem;
+          }
+          &:nth-child(3) {
+            margin-left: 8rem;
+          }
+          .author-image {
+            width: 10rem;
+            height: 10rem;
+            line-height: 10rem;
+            border-radius: 50%;
+          }
+          .author-name {
+            font-family: $titlefont;
+            font-size: 2rem;
+            font-weight: 600;
+            text-transform: capitalize;
+            color: var(--black);
+            a {
+              color: var(--black);
+              transition: $transition;
+              &:hover {
+                color: var(--primary-color);
+              }
+            }
+          }
+          .post-date {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: var(--bColor);
+          }
+          .replay-btn {
+            display: inline-block;
+            color: var(--secondary-color);
+            transition: $transition;
+            &:hover {
+              color: var(--hover-color);
+            }
+          }
+          p {
+            font-size: 1.2rem;
+            font-weight: 400;
+            line-height: 2.2rem;
+            color: var(--bColor);
+            margin: 0;
+          }
+        }
+        .relpay-comment {
+          margin-left: 4.5rem;
+        }
+      }
+    }
+  }
+}
+/*----------------------------
+comment-form
+-----------------------------*/
+.comment-form {
+  .form-group {
+    margin-bottom: 2.5rem;
+    .form-control {
+      width: 100%;
+      height: 4.5rem;
+      border: 1px solid var(--border-color-two);
+      font-family: $bodyFont;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--bColor);
+      padding: 1rem;
+      border-radius: 0;
+    }
+    .message-box {
+      width: 100%;
+      height: 15rem;
+      border: 1px solid var(--border-color-two);
+      font-family: $bodyFont;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--bColor);
+      padding: 1rem;
+      border-radius: 0;
+    }
+  }
+  .btn-style-two {
+    font-size: 1.5rem;
+  }
+}

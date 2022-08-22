@@ -1,0 +1,72 @@
+/*-------------------------
+21.primary-table
+--------------------------*/
+.primary-table {
+  .table {
+    border-collapse: separate;
+    border-spacing: 0 20px;
+    margin: 0;
+  }
+  thead {
+    background: var(--color-eight);
+    th {
+      vertical-align: middle;
+      border: none;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: var(--black);
+      border-bottom: none;
+      padding: 1.2rem 1rem;
+    }
+  }
+  tr {
+    margin-bottom: 2rem;
+  }
+  td {
+    background: var(--color-eight);
+    vertical-align: middle;
+    border: none;
+    padding: 2rem 1rem;
+    font-family: $bodyFont;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--black);
+    &:last-child {
+      text-align: center;
+    }
+  }
+}
+.producd-info {
+  .product-img {
+    width: 7rem;
+    height: 7rem;
+  }
+  .product-name {
+    font-family: $titlefont;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--black);
+    transition: $transition;
+    &:hover {
+      color: var(--hover-color);
+    }
+  }
+}
+.trash-btn {
+  color: var(--black);
+  transition: $transition;
+  &:hover {
+    color: var(--secondary-color);
+  }
+}
+.qnty {
+  width: 6rem;
+  height: 4rem;
+  font-family: $bodyFont;
+  font-size: 1.5rem;
+  border: 1px solid var(--border-color-two);
+  color: var(--black);
+  text-align: center;
+}

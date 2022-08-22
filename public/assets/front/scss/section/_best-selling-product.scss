@@ -1,0 +1,51 @@
+/*----------------------------
+38.best-selling-product
+-----------------------------*/
+.best-selling-product {
+  .best-selling-products-slide {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    position: relative;
+  }
+  .slick-slide {
+    margin: 1.5rem 1.5rem 0 1.5em;
+  }
+  .slick-next {
+    top: -4rem;
+    right: 1rem;
+  }
+  .slick-prev {
+    top: -4rem;
+    right: 5rem;
+  }
+}
+/*----------------------------
+best-selling-v2
+-----------------------------*/
+.best-selling-v2 {
+  .arrow-two:hover {
+    background: var(--primary-color-three);
+    color: var(--white);
+  }
+  .grid-product-v3 {
+    .product-front {
+      background: transparent;
+      border: 1px solid var(--color-four);
+    }
+  }
+}
+/*----------------------------
+best-selling-v3
+-----------------------------*/
+.best-selling-v3 {
+  .arrow-two:hover {
+    background: var(--primary-color-two);
+    color: var(--white);
+  }
+}
+.home-two-selling-v2 {
+  .arrow-two:hover {
+    background: var(--secondary-color);
+    color: var(--white);
+  }
+}

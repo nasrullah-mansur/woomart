@@ -1,0 +1,20 @@
+/*----------------------------
+6.section-title
+-----------------------------*/
+.section-title {
+  font-family: $titlefont;
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--black);
+  margin-bottom: 1rem;
+}
+.sectin-wrap-title {
+  margin-bottom: 2rem;
+  font-family: $titlefont;
+  font-size: 2.4rem;
+  line-height: 1;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--black);
+}

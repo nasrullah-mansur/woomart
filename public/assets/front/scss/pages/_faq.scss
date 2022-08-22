@@ -1,0 +1,112 @@
+/*----------------------------
+28.faq page
+-----------------------------*/
+.faq-page {
+  .nav-pills {
+    .nav-link {
+      margin-bottom: 1rem;
+      font-family: $titlefont;
+      font-size: 1.5rem;
+      line-height: 1;
+      font-weight: 600;
+      text-transform: capitalize;
+      color: var(--black);
+      padding: 1rem 1.5rem;
+      background: var(--color-four);
+      border-radius: 0;
+      transition: $transition;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &:hover {
+        color: var(--white);
+        background: var(--menu-color);
+      }
+      &.active {
+        color: var(--white);
+        background: var(--menu-color);
+      }
+    }
+  }
+  .accordion {
+    .card {
+      margin-bottom: 2rem;
+      border: none;
+      border-radius: 0;
+      &:last-child {
+          margin-bottom: 0;
+      }
+      .card-header {
+        background: transparent;
+        padding: 0;
+        margin: 0;
+        border-bottom: none;
+        button {
+          border: none;
+          padding: 0;
+          background: transparent;
+          display: flex;
+          align-items: center;
+          font-family: $titlefont;
+          font-size: 1.5rem;
+          font-weight: 600;
+          color: var(--black);
+          position: relative;
+          &:before {
+            position: absolute;
+            content: "\f068";
+            font-family: "Font Awesome 5 free";
+            font-weight: 900;
+            right: 1.5rem;
+            color: var(--white);
+          }
+          &.collapsed {
+            &:before {
+              content: "\f067";
+              font-family: "Font Awesome 5 free";
+              color: var(--black);
+            }
+            .faq-number {
+              background: var(--color-four);
+              color: var(--black);
+            }
+            .faq-name {
+              background: var(--color-four);
+              color: var(--black);
+            }
+          }
+          .faq-number {
+            width: 5.5rem;
+            height: 4.5rem;
+            background: var(--primary-color);
+            color: var(--white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 1.5rem;
+          }
+          .faq-name {
+            width: 100%;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            background: var(--primary-color);
+            color: var(--white);
+          }
+        }
+      }
+      .card-body {
+        margin-top: 1rem;
+        background: var(--color-eight);
+        padding: 2rem;
+        p {
+          font-size: 1.5rem;
+          line-height: 2.5rem;
+          font-weight: 400;
+          color: var(--menu-color);
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

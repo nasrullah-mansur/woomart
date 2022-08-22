@@ -1,0 +1,75 @@
+/*----------------------------
+29.order-track-page
+-----------------------------*/
+.order-search {
+  .oder-numner {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--black);
+  }
+  .search-form {
+    .form-control {
+      width: 100%;
+      height: 4.5rem;
+      border: 1px solid var(--border-color-two);
+      font-family: $bodyFont;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--bColor);
+      padding: 1rem;
+      border-radius: 0;
+    }
+    .btn-style-two {
+      font-size: 1.5rem;
+    }
+  }
+}
+.order-tracking {
+  .table {
+    thead {
+      background: var(--white);
+      th {
+        padding: 2rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: var(--bColor);
+      }
+    }
+    td {
+      vertical-align: top;
+      background: var(--white);
+      font-size: 1.5rem;
+      font-weight: 400;
+      text-transform: capitalize;
+      color: var(--black);
+      padding: 2rem;
+      p {
+        margin: 0;
+      }
+      .view-details {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: var(--secondary-color);
+        transition: $transition;
+        &:hover {
+          color: var(--hover-color);
+        }
+      }
+      .amount {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--secondary-color);
+      }
+      .edit-btn {
+        font-size: 1.6rem;
+        color: var(--bColor);
+        transition: $transition;
+        &:hover {
+          color: var(--hover-color);
+        }
+      }
+    }
+  }
+}

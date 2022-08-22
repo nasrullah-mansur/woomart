@@ -1,0 +1,110 @@
+/*-------------------------
+17.shop-page-aera
+--------------------------*/
+.shop-page-aera {
+  .shop-page-top {
+    background: var(--white);
+    padding: 1.5rem 2rem;
+    .breadcrumb-page {
+      display: flex;
+      li {
+        position: relative;
+        padding: 0 1rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        color: var(--bColor);
+        &:after {
+          position: absolute;
+          content: " > ";
+          top: 50%;
+          transform: translateY(-50%);
+          left: -0.3rem;
+        }
+        &:first-child {
+          padding-left: 0;
+          &:after {
+            display: none;
+          }
+        }
+        a {
+          color: var(--bColor);
+          transition: $transition;
+          &:hover {
+            color: var(--primary-color);
+          }
+        }
+      }
+    }
+  }
+  .list-grid-wrap {
+    .nav-tabs {
+      border: none;
+      .nav-item {
+        margin: 0;
+        margin-right: 2rem;
+        .nav-link {
+          border: none;
+          padding: 0;
+          width: 3rem;
+          height: 3rem;
+          @include flex-position(flex, center, center);
+          border: 1px solid var(--bColor);
+          border-radius: 0;
+          transition: $transition;
+          color: var(--bColor);
+          i {
+            &:before {
+              font-size: 1.5rem;
+              line-height: 1;
+            }
+          }
+          &.active {
+            background: var(--black);
+            color: var(--white);
+          }
+          &:hover {
+            background: var(--black);
+            color: var(--white);
+          }
+        }
+      }
+    }
+  }
+  .catagor-btn-list {
+    ul {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      border: 1px solid var(--color-four);
+      li {
+        &:first-child {
+          a {
+            border-left: none;
+          }
+        }
+        &.active {
+          a {
+            color: var(--white);
+            background: var(--primary-color);
+          }
+        }
+        a {
+          display: block;
+          font-size: 1.5rem;
+          font-weight: 400;
+          text-transform: capitalize;
+          color: var(--menu-color);
+          padding: 1rem 1.5rem;
+          border-left: 1px solid var(--color-four);
+          transition: $transition;
+          &:hover {
+            color: var(--white);
+            background: var(--primary-color);
+          }
+        }
+      }
+    }
+  }
+}

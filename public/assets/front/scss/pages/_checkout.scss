@@ -1,0 +1,411 @@
+/*----------------------------
+35.checkout-page 
+-----------------------------*/
+.checkout-page {
+  .checkout-title {
+    margin-bottom: 2rem;
+    font-family: $titlefont;
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--black);
+  }
+  .button-row {
+    background: var(--white);
+    padding: 1rem 2rem 3rem 2rem;
+    .btn {
+      cursor: pointer;
+      display: inline-block;
+      background: var(--secondary-color);
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-transform: capitalize;
+      color: var(--white);
+      transition: $transition;
+      padding: 1rem 3rem;
+      border-radius: 0;
+      margin-left: 2rem;
+      border: none;
+      &:hover {
+        color: var(--white);
+        background: var(--hover-two-color);
+      }
+      &.next {
+        i {
+          margin-left: .5rem;
+        }
+      }
+      &.back {
+        background: var(--black);
+        i {
+          margin-right: .5rem;
+        }
+        &:hover {
+          background: var(--hover-color);
+        }
+      }
+    }
+  }
+  .check-out-form {
+    background: var(--white);
+    padding: 3rem 2rem;
+    label {
+      font-family: $bodyFont;
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 1;
+      text-transform: capitalize;
+      color: var(--black);
+      margin-bottom: 1.2rem;
+    }
+    .form-group {
+      position: relative;
+      margin-bottom: 2rem;
+      .form-control {
+        width: 100%;
+        height: 4.5rem;
+        border: 1px solid var(--border-color-two);
+        border-radius: 0;
+        padding: 1rem 1.5rem;
+        font-family: $bodyFont;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: var(--bColor);
+      }
+      .niceselect {
+        margin-bottom: 2rem;
+        width: 100%;
+        height: 4.5rem;
+        border: 1px solid var(--border-color-two);
+        border-radius: 0;
+        padding: 0.2rem 1.5rem;
+        font-family: $bodyFont;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: var(--bColor);
+      }
+      .form-img {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+      }
+    }
+    .form-check {
+      .form-check-input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        margin-top: 0.6rem;
+      }
+      .checkmark {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        height: 1.5rem;
+        width: 1.5rem;
+        border: 2px solid var(--border-color-two);
+        transition: $transition;
+        &:after {
+          position: absolute;
+          content: "\f00c";
+          font-family: "Font Awesome 5 Pro";
+          font-weight: 900;
+          font-size: 0.8rem;
+          line-height: 1;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          opacity: 0;
+          transform: scale(0);
+          color: var(--border-color-two);
+          transition: $transition;
+        }
+      }
+      input:checked ~ .checkmark {
+        &:after {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      label {
+        margin: 0;
+        padding-left: 1.5rem;
+        cursor: pointer;
+      }
+    }
+    p {
+      font-family: $bodyFont;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--bColor);
+    }
+    .sign-up-btn {
+      color: var(--secondary-color);
+      transition: $transition;
+      font-weight: 500;
+      &:hover {
+        color: var(--hover-two-color);
+      }
+    }
+    .forgot-password {
+      font-family: $bodyFont;
+      font-size: 1.5rem;
+      color: var(--secondary-color);
+      transition: $transition;
+      font-weight: 500;
+      &:hover {
+        color: var(--hover-two-color);
+      }
+    }
+    .returnign-buyer {
+      margin-bottom: 1.5rem;
+      .form-check-label {
+        font-family: $titlefont;
+        font-size: 2.4rem;
+        font-weight: 600;
+        padding-left: 3rem;
+        color: var(--black);
+      }
+      .checkmark {
+        width: 2.2rem;
+        height: 2.2rem;
+        top: 0;
+        border: 2px solid var(--black);
+        &:after {
+          font-size: 1.4rem;
+          color: var(--black);
+        }
+      }
+    }
+    .question {
+      display: inline-block;
+      margin-top: 1rem;
+      font-size: 2.5rem;
+      color: var(--bColor);
+      transition: $transition;
+      &:hover {
+        color: var(--secondary-color);
+      }
+    }
+    .credit-card {
+      position: relative;
+      input {
+        left: 30px;
+        top: 10px;
+        width: 0;
+        height: 0;
+        opacity: 0;
+      }
+      .form-check-label {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 4.5rem;
+        border: 1px solid var(--border-color-two);
+        border-radius: 0;
+        padding: 1rem 1.5rem;
+        font-family: $bodyFont;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: var(--bColor);
+        cursor: pointer;
+        .card-name {
+          position: relative;
+          padding-left: 25px;
+          &:before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+            box-sizing: border-box;
+            z-index: 3;
+            background-color: var(--white);
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            background: var(--border-color-two);
+            border: 3px solid var(--white);
+            box-shadow: 0 0 0 2px var(--border-color-two);
+          }
+        }
+      }
+      input:checked ~ .form-check-label .card-name {
+        &:before {
+          background: var(--secondary-color);
+          border: 3px solid var(--white);
+          box-shadow: 0 0 0 2px var(--secondary-color);
+        }
+      }
+    }
+    .save-card {
+      position: relative;
+      margin-top: 3rem;
+      .form-check-input {
+        position: absolute;
+        top: 2px;
+      }
+      .form-check-label {
+        margin-left: 1.5rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.multisteps-form__progress {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  padding: 3.5rem 3rem 2rem 3rem;
+  background: var(--white);
+  margin-bottom: 5rem;
+}
+
+.multisteps-form__progress-btn {
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+  position: relative;
+  padding-top: 20px;
+  color: rgba(108, 117, 125, 0.7);
+  text-indent: -9999px;
+  border: none;
+  background-color: transparent;
+  outline: none !important;
+  cursor: pointer;
+}
+@media (min-width: 500px) {
+  .multisteps-form__progress-btn {
+    text-indent: 0;
+  }
+}
+.multisteps-form__progress-btn:before {
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  display: block;
+  content: "";
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  transition: all 0.15s linear 0s,
+    -webkit-transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s;
+  transition: all 0.15s linear 0s,
+    transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s;
+  transition: all 0.15s linear 0s,
+    transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s,
+    -webkit-transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s;
+  border-radius: 50%;
+  box-sizing: border-box;
+  z-index: 3;
+  background-color: var(--white);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background: var(--border-color-two);
+  border: 4px solid var(--white);
+  box-shadow: 0 0 0 2px var(--border-color-two);
+}
+.multisteps-form__progress-btn:after {
+  position: absolute;
+  top: 5px;
+  left: calc(-50% - 13px / 2);
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+  display: block;
+  width: 100%;
+  height: 2px;
+  content: "";
+  background-color: var(--border-color-two);
+  z-index: 1;
+}
+.multisteps-form__progress-btn:first-child:after {
+  display: none;
+}
+.multisteps-form__progress-btn.js-active {
+  color: var(--menu-color);
+}
+.multisteps-form__progress-btn.js-active:before {
+  -webkit-transform: translateX(-50%) scale(1.2);
+  transform: translateX(-50%) scale(1.2);
+  background: var(--secondary-color);
+  box-shadow: 0 0 0 2px var(--secondary-color);
+}
+.multisteps-form__progress-btn.js-active:after {
+  background-color: var(--secondary-color);
+}
+
+.multisteps-form__form {
+  position: relative;
+}
+
+.multisteps-form__panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.multisteps-form__panel.js-active {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+}
+.multisteps-form__panel[data-animation="scaleOut"] {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.multisteps-form__panel[data-animation="scaleOut"].js-active {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.multisteps-form__panel[data-animation="slideHorz"] {
+  left: 50px;
+}
+.multisteps-form__panel[data-animation="slideHorz"].js-active {
+  transition-property: all;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.2, 1.13, 0.38, 1.43);
+  transition-delay: 0s;
+  left: 0;
+}
+.multisteps-form__panel[data-animation="slideVert"] {
+  top: 30px;
+}
+.multisteps-form__panel[data-animation="slideVert"].js-active {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+  top: 0;
+}
+.multisteps-form__panel[data-animation="fadeIn"].js-active {
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+}
+.multisteps-form__panel[data-animation="scaleIn"] {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+.multisteps-form__panel[data-animation="scaleIn"].js-active {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}

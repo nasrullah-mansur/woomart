@@ -1,0 +1,53 @@
+/*----------------------------
+37.trend-fashion-area
+-----------------------------*/
+.trend-fashion-area {
+  .slick-slide {
+    margin-bottom: -0.7rem;
+  }
+  .single-trend {
+    background: url(../images/trend-fashion-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0 5rem;
+    .trend-content {
+      h3 {
+        margin-bottom: 2rem;
+        font-size: 3rem;
+        font-weight: 300;
+        text-transform: capitalize;
+        color: var(--color-nine);
+        span {
+          font-weight: 600;
+        }
+      }
+      h2 {
+        margin-bottom: 1rem;
+        font-family: $titlefont;
+        font-size: 5rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: var(--color-ten);
+      }
+      p {
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: var(--color-two);
+      }
+      .trend-btn {
+        display: inline-block;
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: var(--color-nine);
+        text-decoration: underline;
+        transition: $transition;
+        &:hover {
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+}

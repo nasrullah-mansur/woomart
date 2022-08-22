@@ -1,0 +1,82 @@
+/*----------------------------
+8.featured-product
+-----------------------------*/
+.featured-product {
+  .featured-slide {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    position: relative;
+    .featured-list {
+      padding: 1.5rem;
+    }
+    .slick-next {
+      top: -4rem;
+      right: 1rem;
+    }
+    .slick-prev {
+      top: -4rem;
+      right: 5rem;
+    }
+  }
+}
+
+.slick-dots {
+  text-align: center;
+  margin-top: 1rem;
+  li {
+    display: inline-block;
+    margin: 0 0.5rem;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid var(--bColor);
+    font-size: 0;
+    background: transparent;
+    cursor: pointer;
+    transition: $transition;
+    &.slick-active {
+      background: var(--bColor);
+    }
+    button {
+      display: none;
+    }
+  }
+}
+/*----------------------------
+featured-v2
+-----------------------------*/
+.featured-v2 {
+  .arrow-two:hover {
+    background: var(--primary-color-three);
+    color: var(--white);
+  }
+  .grid-product-v3 {
+    .product-front {
+      background: transparent;
+      border: 1px solid var(--color-four);
+    }
+  }
+}
+/*----------------------------
+featured-v3
+-----------------------------*/
+.featured-v3 {
+  .arrow-two:hover {
+    background: var(--primary-color-two);
+    color: var(--white);
+  }
+}
+
+.featured-two-v2 {
+  .arrow-two:hover {
+    background: var(--secondary-color);
+    color: var(--white);
+  }
+}
+
+.featured-v5 {
+  .arrow-two:hover {
+    background: var(--primary-color-two);
+    color: var(--white);
+  }
+}

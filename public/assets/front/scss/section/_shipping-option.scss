@@ -1,0 +1,54 @@
+/*-------------------------
+15.shipping-option
+--------------------------*/
+.shipping-option {
+  background: var(--color-five);
+  .single-shipping {
+    margin-bottom: 3rem;
+    .option-iocn {
+      @include flex-position(flex, center, center);
+      width: 10rem;
+      height: 10rem;
+      margin: auto;
+      margin-bottom: 2rem;
+      border: 1px solid var(--white);
+      color: var(--white);
+      i:before {
+        font-size: 6rem;
+        line-height: 1;
+      }
+    }
+    h3 {
+      font-family: $titlefont;
+      font-size: 2.4rem;
+      font-weight: 600;
+      text-transform: capitalize;
+      color: var(--black);
+    }
+    p {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: 400;
+      text-transform: capitalize;
+      color: var(--white);
+    }
+  }
+}
+/*-------------------------
+shipping-option-two
+--------------------------*/
+.shipping-option-two {
+  padding: 5rem 0;
+  .single-shipping {
+    .option-iocn {
+      border: 1px solid var(--border-color-two);
+      color: var(--color-two);
+    }
+    h3 {
+      color: var(--menu-color);
+    }
+    p {
+      color: var(--color-two);
+    }
+  }
+}

@@ -1,0 +1,66 @@
+/*----------------------------
+33.team-area
+-----------------------------*/
+.team-area {
+  .team-slide {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    position: relative;
+  }
+  .slick-slide {
+    margin: 1.5rem 1.5rem 1.5rem 1.5rem;
+  }
+  .slick-next {
+    top: -4rem;
+    right: 1rem;
+  }
+  .slick-prev {
+    top: -4rem;
+    right: 5rem;
+  }
+  .sngle-team {
+    padding: 1rem;
+    border: 1px solid var(--border-color-two);
+    transition: $transition;
+    &:hover {
+      @include box-shadow-two();
+      .team-info {
+        background: var(--color-six);
+      }
+    }
+    .team-thumnail {
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+    .team-info {
+      padding: 2rem 1rem;
+      transition: $transition;
+      .team-name {
+        margin-bottom: 0.5rem;
+        font-family: $titlefont;
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        color: var(--black);
+        a {
+          color: var(--black);
+          transition: $transition;
+          &:hover {
+            color: var(--primary-color);
+          }
+        }
+      }
+      .team-profesiona {
+        margin: 0;
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        font-weight: 400;
+        color: var(--bColor);
+        text-transform: capitalize;
+      }
+    }
+  }
+}

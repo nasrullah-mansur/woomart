@@ -1,0 +1,49 @@
+/*----------------------------
+31.about-us-area
+-----------------------------*/
+.about-us-area {
+  .about-wrap {
+    background: var(--white);
+    .about-info {
+      padding: 2rem;
+      h2 {
+        margin-bottom: 1rem;
+        font-family: $titlefont;
+        font-size: 3.2rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: var(--black);
+      }
+      p {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        font-weight: 400;
+        color: var(--bColor);
+      }
+      .feature-lsit {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          display: block;
+          position: relative;
+          padding-left: 3rem;
+          margin-bottom: 1rem;
+          font-size: 1.5rem;
+          font-weight: 400;
+          color: var(--bColor);
+          &:before {
+            position: absolute;
+            content: "\f058";
+            font-family: "Font Awesome 5 free";
+            font-weight: 900;
+            left: 0;
+            top: 0;
+            color: var(--black);
+          }
+        }
+      }
+    }
+  }
+}

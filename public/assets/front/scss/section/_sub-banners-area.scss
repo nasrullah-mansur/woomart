@@ -1,0 +1,128 @@
+/*----------------------------
+39.sub-banners-area
+-----------------------------*/
+.sub-banners-area {
+  .catagory-banner {
+    @include flex-position(flex, space-between, center);
+    position: relative;
+    min-height: 30rem;
+    background: #ffdebf;
+    padding: 0 3rem;
+    z-index: 1;
+    overflow: hidden;
+    .banner-content {
+      .product-off {
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: var(--color-two);
+      }
+      .banner-title {
+        margin-bottom: 1rem;
+        font-family: $titlefont;
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--black);
+        a {
+          color: var(--black);
+        }
+      }
+      .shop-now-btn {
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: var(--menu-color);
+        text-decoration: underline;
+        transition: $transition;
+        &:hover {
+          color: var(--primary-color-two);
+        }
+      }
+    }
+    &:after {
+      position: absolute;
+      content: "";
+      width: 17rem;
+      height: 17rem;
+      background: #ffd2a8;
+      right: -6rem;
+      bottom: -6rem;
+      border-radius: 50%;
+      z-index: -1;
+    }
+    &.small-banner {
+      &:after {
+        width: 12rem;
+        height: 12rem;
+        right: -5rem;
+        bottom: -5rem;
+      }
+    }
+    &.big-banner {
+      background: #e7ffc7;
+      &:after {
+        background: #d6faa7;
+      }
+    }
+  }
+}
+/*----------------------------
+sub-banners-two-area
+-----------------------------*/
+.sub-banners-two-area {
+  .signle-catagory-banner {
+    padding: 3rem 2rem;
+  }
+  .larger-banner {
+    min-height: 53rem;
+    padding: 6rem 5rem;
+    background: url("../images/banner/1.jpg") no-repeat center / cover;
+    .product-content {
+      width: 80%;
+    }
+  }
+  .mediua-banner {
+    min-height: 25rem;
+    padding: 1rem 4.5rem;
+    background: url("../images/banner/2.jpg") no-repeat center / cover;
+    .product-content {
+      width: 80%;
+    }
+  }
+  .small-banner {
+    min-height: 25rem;
+    background: url("../images/banner/3.jpg") no-repeat center / cover;
+  }
+  .bg-img-two {
+    background: url("../images/banner/4.jpg") no-repeat center / cover;
+  }
+  .product-content {
+    .offer-title {
+      font-size: 1.6rem;
+      font-weight: 600;
+      text-transform: capitalize;
+      color: var(--secondary-color);
+    }
+    .product-title {
+      margin-bottom: 0.5rem;
+      font-family: $titlefont;
+      font-size: 2rem;
+      font-weight: 600;
+      text-transform: capitalize;
+      color: var(--black);
+      a {
+        color: var(--black);
+        transition: $transition;
+        &:hover {
+          color: var(--primary-color-three);
+        }
+      }
+    }
+    .product-content {
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      color: var(--color-two);
+    }
+  }
+}

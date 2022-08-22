@@ -1,0 +1,39 @@
+/*----------------------------
+27.contact-page
+-----------------------------*/
+.contact-page {
+  .contact-info {
+    h3 {
+      font-family: $titlefont;
+      font-size: 2rem;
+      font-weight: 600;
+      text-transform: capitalize;
+      color: var(--black);
+    }
+    p {
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      font-weight: 400;
+      color: var(--bColor);
+      margin-bottom: 1.6rem;
+    }
+    .contacts-info-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        position: relative;
+        padding-left: 3rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: var(--menu-color);
+        margin-bottom: 2.5rem;
+        .icon {
+          position: absolute;
+          left: 0;
+          top: 0.5rem;
+        }
+      }
+    }
+  }
+}

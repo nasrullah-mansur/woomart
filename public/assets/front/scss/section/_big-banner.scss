@@ -1,0 +1,150 @@
+/*-------------------------
+13.big-banner
+--------------------------*/
+.big-banner-slide {
+  .slick-next {
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    top: 49%;
+    transform: translateY(-50%);
+    right: -7rem;
+  }
+  .slick-prev {
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    top: 49%;
+    transform: translateY(-50%);
+    left: -7rem;
+  }
+}
+.big-banner {
+  .sigle-banenr {
+    background: url("../images/big-banner.jpg") no-repeat center / cover;
+    .banner-text {
+      padding: 10rem 0;
+      h2 {
+        margin-bottom: 0;
+        font-family: $titlefont;
+        font-size: 6rem;
+        font-weight: 300;
+        text-transform: capitalize;
+        color: var(--black);
+      }
+      h3 {
+        margin-bottom: 0;
+        font-family: $titlefont;
+        font-size: 5rem;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: var(--white);
+      }
+      p {
+        margin-bottom: 3rem;
+        font-size: 1.8rem;
+        line-height: 3rem;
+        font-weight: 400;
+        color: var(--white);
+      }
+      .primary-btn {
+        background: var(--white);
+        color: var(--Bcolor);
+        border-radius: 0;
+        transition: $transition;
+        &:hover {
+          color: var(--white);
+          background: var(--secondary-color);
+        }
+      }
+    }
+  }
+}
+.larg-banner-area {
+  .larg-banner-img {
+    position: relative;
+    .banner-img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      clip-path: polygon(92% 0, 100% 50%, 92% 100%, 0 100%, 0 50%, 0 0);
+    }
+    .round-image {
+      @include flex-position(flex, center, center);
+      position: absolute;
+      right: 5.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20rem;
+      height: 20rem;
+      border-radius: 50%;
+      background: var(--white);
+    }
+  }
+  .larg-banner-content {
+    @include flex-position(flex, center, center);
+    padding: 1rem 5.5rem 1rem 10rem;
+    background: var(--color-nine);
+    min-height: 32.5rem;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%, 8% 50%, 0 0);
+    h2 {
+      margin-bottom: 1.5rem;
+      font-family: $titlefont;
+      font-size: 4rem;
+      font-weight: 600;
+      text-transform: capitalize;
+      color: var(--white);
+    }
+    p {
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      color: var(--color-four);
+    }
+    .banner-btn {
+      font-size: 1.6rem;
+      font-weight: 600;
+      text-transform: capitalize;
+      color: var(--white);
+      transition: $transition;
+      text-decoration: underline;
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+  }
+}
+.big-banner-v2 {
+  .arrow-two {
+    &:hover {
+      background: var(--primary-color-two);
+      color: var(--white);
+    }
+  }
+  .sigle-banenr  {
+    padding: 0 3rem;
+    background: url("../images/big-banner1.jpg") no-repeat center / cover;
+    .banner-text {
+      padding: 0;
+      h2 {
+        color: var(--black);
+      }
+      h3 {
+        color: var(--black);
+      }
+      p {
+        font-size: 1.5rem;
+        color: var(--bColor);
+      }
+      .primary-btn {
+        background: var(--primary-color-two);
+        color: var(--white);
+        &:hover {
+          color: var(--white);
+          background: var(--hover-color-three);
+        }
+      }
+    }
+  }
+  
+}

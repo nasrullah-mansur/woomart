@@ -1,0 +1,32 @@
+.custome_verticle_tab
+{
+	border-radius: .25rem;
+	background-color: #fff;
+	border-left: 5px solid #e9ecef;
+	    border-left-color: rgb(233, 236, 239);
+	margin-bottom: 1rem;
+	padding: 1rem;
+}
+
+.cvt-info{
+	border-left-color: #117a8b;
+}
+
+.cvt-danger{
+	border-left-color: #bd2130;
+}
+
+.cvt-warning{
+
+	border-left-color: #d39e00;
+}
+
+.cvt-success{
+	
+	border-left-color: #23923d;
+}
+
+.cvt-primary{
+	
+	border-left-color: #0059bd;
+}

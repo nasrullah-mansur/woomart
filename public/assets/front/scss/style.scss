@@ -1,0 +1,155 @@
+/*
+------------- Table of content ----------------
+
+Template Name: Woomart Responsive  HTML5 Template
+Template URI: http://zainiklab.com/html-templates/FolderName
+Description: Woomart Responsive  HTML5 Template
+Author: zainiklab
+Author URI: https://themeforest.net/user/zainiklab/portfolio
+Version: 1.0
+
+---------------------- common content ----------
+1.body reset content
+2.header area
+3.footer-area
+4.buttons-area
+5.slider-area
+6.section-title
+7.categories-area
+8.featured-product
+9.medium-banner
+10.new-arrivals-area
+11.sidebar-area
+12.blog-area
+13.big-banner
+14.brand-area
+15.shipping-option
+16.prodect-modal
+17.shope-page-aera
+18.section-top-banner
+19.paginatin-area
+20.single-shope-page
+21.primary-table
+22.cart-page
+23.wishlist-page
+24.register-page
+25.terms-conditions-page
+26.404 page
+27.contact-page
+28.faq page
+29.order-track-page
+30.single-blog-page
+31.about-us-area
+32.mission-vision-area
+33.team-area
+34.testimonial-area
+35.checkout-page 
+36.offer-area
+37.trend-fashion-area
+38.best-selling-product
+39.sub-banners-area
+40.offer-week-area
+41.widget-area
+42.preloader
+*/
+
+
+// variable
+@import "variable/_variable.scss";
+
+// mixin
+@import "mixin/_mixin.scss";
+
+// body reset content
+@import "reset/_predefine.scss";
+
+// component content
+@import "section/header";
+@import "section/widget";
+@import "section/footer";
+@import "section/social-meida";
+@import "section/buttons";
+@import "section/slider";
+@import "section/animation";
+@import "section/section-title";
+@import "section/categories";
+@import "section/sigle-product";
+@import "section/featured-product";
+@import "section/medium-banner";
+@import "section/arrivals";
+@import "section/sidebar";
+@import "section/blog";
+@import "section/big-banner";
+@import "section/brand";
+@import "section/shipping-option";
+@import "section/prodect-modal";
+@import "section/section-top-banner";
+@import "section/pagination";
+@import "section/primary-table";
+@import "section/register";
+@import "section/contact-form";
+@import "section/about-area";
+@import "section/mission-vision";
+@import "section/team-area";
+@import "section/testimonial-area";
+@import "section/offer-area";
+@import "section/trend-fashion";
+@import "section/best-selling-product";
+@import "section/sub-banners-area";
+@import "section/offer-week-area";
+@import "section/preloader";
+
+
+
+
+
+
+
+
+
+
+
+// pages content
+@import "pages/shop-page";
+@import "pages/single-shop-page";
+@import "pages/cart-page";
+@import "pages/wishlist-page";
+@import "pages/terms-conditions";
+@import "pages/404";
+@import "pages/contact-page";
+@import "pages/faq";
+@import "pages/order-track";
+@import "pages/single-blog-page";
+@import "pages/checkout";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// page content

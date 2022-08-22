@@ -1,0 +1,29 @@
+/*----------------------------
+26.404 page
+-----------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Fruktur&display=swap");
+.error-page {
+  .error-title {
+    margin-bottom: 1.5rem;
+    font-family: "Fruktur", cursive;
+    font-size: 10rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--menu-color);
+    span {
+      color: var(--secondary-color);
+    }
+  }
+  p {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--bColor);
+  }
+  .btn-style-two {
+    background: var(--primary-color);
+    &:hover {
+      background: var(--hover-color);
+    }
+  }
+}

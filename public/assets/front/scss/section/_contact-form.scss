@@ -1,0 +1,47 @@
+/*----------------------------
+contact form
+-----------------------------*/
+.primary-form {
+  h3 {
+    margin-bottom: 2rem;
+    font-family: $titlefont;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--black);
+  }
+  .form-group {
+    label {
+      font-family: $bodyFont;
+      font-size: 1.5rem;
+      font-weight: 400;
+      text-transform: capitalize;
+      color: var(--bColor);
+    }
+    .form-control {
+      width: 100%;
+      height: 4.5rem;
+      border: 1px solid var(--border-color-two);
+      font-family: $bodyFont;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--bColor);
+      padding: 1rem;
+      border-radius: 0;
+    }
+    .message-box {
+      width: 100%;
+      height: 15rem;
+      border: 1px solid var(--border-color-two);
+      font-family: $bodyFont;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--bColor);
+      padding: 1rem;
+      border-radius: 0;
+    }
+  }
+  .btn-style-two {
+    border: none;
+  }
+}

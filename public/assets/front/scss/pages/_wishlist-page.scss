@@ -1,0 +1,38 @@
+/*----------------------------
+23.wishlist-page
+-----------------------------*/
+.wishlist-page {
+  .product-content {
+    text-align: left;
+    .product-name {
+      margin-bottom: 0;
+    }
+    .product-review {
+      display: flex;
+      margin-bottom: 0;
+      li {
+        color: var(--secondary-color);
+        margin-right: 0.5rem;
+        i {
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .stock {
+      margin-left: 0;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--menu-color);
+    }
+  }
+  .primary-table {
+    td {
+      text-align: center;
+    }
+  }
+  .price {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--black);
+  }
+}

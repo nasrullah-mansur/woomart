@@ -1,0 +1,38 @@
+/*-------------------------
+14.brand-area
+--------------------------*/
+.brands-area {
+  .brand-slide {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    position: relative;
+    .slick-slide {
+      margin: 1.5rem;
+    }
+    .slick-next {
+      top: -4rem;
+      right: 1rem;
+    }
+    .slick-prev {
+      top: -4rem;
+      right: 5rem;
+    }
+  }
+}
+
+.single-barnd {
+  padding: 1rem;
+  border: 1px solid var(--border-color-two);
+  height: 10rem;
+  transition: $transition;
+  &:hover {
+    border: 1px solid var(--secondary-color);
+  }
+}
+
+.brands-v2 {
+  .arrow-two:hover {
+    background: var(--secondary-color);
+    color: var(--white);
+  }
+}
